@@ -41,7 +41,7 @@ namespace quản_lý_bán_hàng
             else
             {
                
-                if (checkrong() == false)
+                if (checkrong(textBoxGia.Text, textBoxMaHang.Text) == false)
                 {
                     MessageBox.Show("Vui lòng điền đầy đủ thông mặt hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
@@ -79,29 +79,29 @@ namespace quản_lý_bán_hàng
                     }
 
                 }
-                bool checkrong()
-                {
-                    if (textBoxGia.Text.Trim() == "" || textBoxMaHang.Text.Trim() == "" )
-                    {
-                        return false;
-                    }
-                    else
-                        return true;
-                }
+               
             }
         }
-
+      private  bool checkrong(string gia, string mathang)
+        {
+            if (String.IsNullOrWhiteSpace(gia) || String.IsNullOrWhiteSpace(mathang))
+            {
+                return false;
+            }
+            else
+                return true;
+        }
         private void dataGridViewMatHang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             textBoxMaHang.Text = dataGridViewMatHang.CurrentRow.Cells[0].Value.ToString();
             textBoxTenHang.Text = dataGridViewMatHang.CurrentRow.Cells[2].Value.ToString();
-            textBoxGia.Text = dataGridViewMatHang.CurrentRow.Cells[4].Value.ToString();
+            textBoxGia.Text = dataGridViewMatHang.CurrentRow.Cells[3].Value.ToString();
             //byte[] pic;
            // pic = (byte[])dataGridViewMatHang.CurrentRow.Cells[3].Value;
            // MemoryStream picture = new MemoryStream(pic);
             //pictureBoxHinh.Image = Image.FromStream(picture);
             double value = Convert.ToDouble(textBoxGia.Text);
-            textBoxGia.Text=string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", value);
+           // textBoxGia.Text=string.Format(new CultureInfo("vi-VN"), "{0:#,##0}", value);
         }
         
         void refresh()
@@ -183,7 +183,7 @@ namespace quản_lý_bán_hàng
             if (table.Rows.Count > 0)
             {
                 tenkh = table.Rows[0]["hoten"].ToString();
-                labelKH.Text = "Khách hàng: " + table.Rows[0]["hoten"].ToString();
+             
 
             }
         }
@@ -303,31 +303,16 @@ namespace quản_lý_bán_hàng
 
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void dataGridViewMatHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            try
-            {
-                x += a;
-                labelKhuyenMai.Location = new Point(x, y);
-                if (x >= 421)
-                {
-                    a = -1;
-                    labelKhuyenMai.ForeColor = Color.FromArgb(random.Next(0, 255), random.Next(0, 255), random.Next(0, 255));
-                }
-                if (x <= 69)
-                {
-                    a = 1;
-                    labelKhuyenMai.ForeColor = Color.FromArgb(random.Next(0, 255), random.Next(0, 255), random.Next(0, 255));
-                }
-
-            }
-            catch (Exception ex)
-            { }
-        }
+      
     }
 }

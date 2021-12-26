@@ -31,14 +31,11 @@ namespace quản_lý_bán_hàng
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KHForm));
-            this.labelKH = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelKhuyenMai = new System.Windows.Forms.Label();
             this.buttonThoat = new quản_lý_bán_hàng.customButton();
             this.buttonDangXuat = new quản_lý_bán_hàng.customButton();
             this.pictureBoxGioHang = new System.Windows.Forms.PictureBox();
             this.numericSoLuong = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -52,7 +49,6 @@ namespace quản_lý_bán_hàng
             this.textBoxTenHang = new quản_lý_bán_hàng.textBoxCustom();
             this.textBoxMaHang = new quản_lý_bán_hàng.textBoxCustom();
             this.buttonThem = new quản_lý_bán_hàng.customButton();
-            this.pictureBoxHinh = new System.Windows.Forms.PictureBox();
             this.labelGioHang = new System.Windows.Forms.Label();
             this.groupBoxMuaHang = new System.Windows.Forms.GroupBox();
             this.dataGridViewMatHang = new System.Windows.Forms.DataGridView();
@@ -61,46 +57,21 @@ namespace quản_lý_bán_hàng
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGioHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericSoLuong)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHinh)).BeginInit();
             this.groupBoxMuaHang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMatHang)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelKH
-            // 
-            this.labelKH.AutoSize = true;
-            this.labelKH.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.labelKH.ForeColor = System.Drawing.Color.Black;
-            this.labelKH.Location = new System.Drawing.Point(158, 14);
-            this.labelKH.Name = "labelKH";
-            this.labelKH.Size = new System.Drawing.Size(337, 24);
-            this.labelKH.TabIndex = 15;
-            this.labelKH.Text = "Khách hàng ... hiện đang mua sắm";
-            this.labelKH.Click += new System.EventHandler(this.labelKH_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.labelKhuyenMai);
             this.panel1.Controls.Add(this.buttonThoat);
             this.panel1.Controls.Add(this.buttonDangXuat);
-            this.panel1.Controls.Add(this.labelKH);
             this.panel1.Controls.Add(this.pictureBoxGioHang);
             this.panel1.Location = new System.Drawing.Point(-9, 597);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1115, 105);
             this.panel1.TabIndex = 6;
-            // 
-            // labelKhuyenMai
-            // 
-            this.labelKhuyenMai.AutoSize = true;
-            this.labelKhuyenMai.Font = new System.Drawing.Font("Arial", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelKhuyenMai.ForeColor = System.Drawing.Color.Cyan;
-            this.labelKhuyenMai.Location = new System.Drawing.Point(158, 69);
-            this.labelKhuyenMai.Name = "labelKhuyenMai";
-            this.labelKhuyenMai.Size = new System.Drawing.Size(440, 19);
-            this.labelKhuyenMai.TabIndex = 18;
-            this.labelKhuyenMai.Text = "Áp dụng mã giảm giá được giảm 10% trên tổng hóa đơn";
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // buttonThoat
             // 
@@ -161,15 +132,6 @@ namespace quản_lý_bán_hàng
             this.numericSoLuong.Size = new System.Drawing.Size(65, 22);
             this.numericSoLuong.TabIndex = 2;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 329);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 16);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Hình:";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -220,10 +182,8 @@ namespace quản_lý_bán_hàng
             this.panel2.Controls.Add(this.textBoxTenHang);
             this.panel2.Controls.Add(this.textBoxMaHang);
             this.panel2.Controls.Add(this.buttonThem);
-            this.panel2.Controls.Add(this.pictureBoxHinh);
             this.panel2.Controls.Add(this.numericSoLuong);
             this.panel2.Controls.Add(this.labelGioHang);
-            this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label6);
@@ -258,15 +218,15 @@ namespace quản_lý_bán_hàng
             // 
             // buttonXacNhan
             // 
-            this.buttonXacNhan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.buttonXacNhan.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.buttonXacNhan.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonXacNhan.BackgroundColor = System.Drawing.Color.DodgerBlue;
             this.buttonXacNhan.BoderRadius = 40;
             this.buttonXacNhan.BoderSize = 0;
             this.buttonXacNhan.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.buttonXacNhan.FlatAppearance.BorderSize = 0;
             this.buttonXacNhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonXacNhan.ForeColor = System.Drawing.Color.White;
-            this.buttonXacNhan.Location = new System.Drawing.Point(107, 638);
+            this.buttonXacNhan.Location = new System.Drawing.Point(103, 633);
             this.buttonXacNhan.Name = "buttonXacNhan";
             this.buttonXacNhan.ReadOnly = false;
             this.buttonXacNhan.Size = new System.Drawing.Size(150, 40);
@@ -279,7 +239,7 @@ namespace quản_lý_bán_hàng
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(29, 579);
+            this.label8.Location = new System.Drawing.Point(23, 547);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(85, 16);
             this.label8.TabIndex = 10;
@@ -293,7 +253,7 @@ namespace quản_lý_bán_hàng
             this.textBoxMaGG.Br = System.Drawing.Color.White;
             this.textBoxMaGG.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.textBoxMaGG.ForeColor = System.Drawing.Color.Black;
-            this.textBoxMaGG.Location = new System.Drawing.Point(41, 599);
+            this.textBoxMaGG.Location = new System.Drawing.Point(41, 582);
             this.textBoxMaGG.Name = "textBoxMaGG";
             this.textBoxMaGG.PasswordChar = '\0';
             this.textBoxMaGG.ReadOnly = false;
@@ -363,7 +323,7 @@ namespace quản_lý_bán_hàng
             this.buttonThem.FlatAppearance.BorderSize = 0;
             this.buttonThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonThem.ForeColor = System.Drawing.Color.White;
-            this.buttonThem.Location = new System.Drawing.Point(50, 515);
+            this.buttonThem.Location = new System.Drawing.Point(50, 432);
             this.buttonThem.Name = "buttonThem";
             this.buttonThem.ReadOnly = false;
             this.buttonThem.Size = new System.Drawing.Size(264, 40);
@@ -373,21 +333,11 @@ namespace quản_lý_bán_hàng
             this.buttonThem.UseVisualStyleBackColor = false;
             this.buttonThem.Click += new System.EventHandler(this.buttonThem_Click);
             // 
-            // pictureBoxHinh
-            // 
-            this.pictureBoxHinh.BackColor = System.Drawing.Color.White;
-            this.pictureBoxHinh.Location = new System.Drawing.Point(140, 329);
-            this.pictureBoxHinh.Name = "pictureBoxHinh";
-            this.pictureBoxHinh.Size = new System.Drawing.Size(163, 140);
-            this.pictureBoxHinh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxHinh.TabIndex = 3;
-            this.pictureBoxHinh.TabStop = false;
-            // 
             // labelGioHang
             // 
             this.labelGioHang.AutoSize = true;
             this.labelGioHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGioHang.Location = new System.Drawing.Point(178, 28);
+            this.labelGioHang.Location = new System.Drawing.Point(208, 38);
             this.labelGioHang.Name = "labelGioHang";
             this.labelGioHang.Size = new System.Drawing.Size(106, 25);
             this.labelGioHang.TabIndex = 0;
@@ -424,7 +374,6 @@ namespace quản_lý_bán_hàng
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 20;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // KHForm
             // 
@@ -442,12 +391,10 @@ namespace quản_lý_bán_hàng
             this.Text = "Khách hàng";
             this.Load += new System.EventHandler(this.KHForm_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGioHang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericSoLuong)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHinh)).EndInit();
             this.groupBoxMuaHang.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMatHang)).EndInit();
             this.ResumeLayout(false);
@@ -461,9 +408,7 @@ namespace quản_lý_bán_hàng
         public textBoxCustom textBoxTenHang;
         public textBoxCustom textBoxMaHang;
         public customButton buttonThem;
-        public System.Windows.Forms.PictureBox pictureBoxHinh;
         public System.Windows.Forms.NumericUpDown numericSoLuong;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
@@ -472,14 +417,12 @@ namespace quản_lý_bán_hàng
         private System.Windows.Forms.Label label8;
         private textBoxCustom textBoxMaGG;
         public System.Windows.Forms.GroupBox groupBoxMuaHang;
-        public System.Windows.Forms.Label labelKH;
         public customButton buttonThoat;
         public customButton buttonDangXuat;
         public System.Windows.Forms.Label labelGioHang;
         public customButton buttonChonGH;
         private System.Windows.Forms.DataGridView dataGridViewMatHang;
         public customButton buttonXacNhan;
-        public System.Windows.Forms.Label labelKhuyenMai;
         private System.Windows.Forms.Timer timer1;
     }
 }

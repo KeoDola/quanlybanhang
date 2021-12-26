@@ -30,8 +30,6 @@ namespace quản_lý_bán_hàng
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyForm));
-            this.dataGridViewDoanhThu = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonQuanLyNV = new quản_lý_bán_hàng.customButton();
             this.buttonXoaNV = new quản_lý_bán_hàng.customButton();
@@ -45,31 +43,9 @@ namespace quản_lý_bán_hàng
             this.customButton1 = new quản_lý_bán_hàng.customButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDoanhThu)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // dataGridViewDoanhThu
-            // 
-            this.dataGridViewDoanhThu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewDoanhThu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDoanhThu.Location = new System.Drawing.Point(352, 77);
-            this.dataGridViewDoanhThu.Name = "dataGridViewDoanhThu";
-            this.dataGridViewDoanhThu.RowHeadersWidth = 51;
-            this.dataGridViewDoanhThu.RowTemplate.Height = 24;
-            this.dataGridViewDoanhThu.Size = new System.Drawing.Size(587, 389);
-            this.dataGridViewDoanhThu.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(603, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 24);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Doanh thu";
             // 
             // panel2
             // 
@@ -297,8 +273,6 @@ namespace quản_lý_bán_hàng
             this.Controls.Add(this.customButton1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridViewDoanhThu);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Italic);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -307,7 +281,6 @@ namespace quản_lý_bán_hàng
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý";
             this.Load += new System.EventHandler(this.QuanLyForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDoanhThu)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -318,8 +291,6 @@ namespace quản_lý_bán_hàng
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridViewDoanhThu;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

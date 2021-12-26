@@ -62,26 +62,7 @@ namespace quản_lý_bán_hàng
         }
         void StyleDatagridview()
         {
-           
-            dataGridViewMatHang.ReadOnly = true;
-            dataGridViewMatHang.RowTemplate.Height = 60;
-            dataGridViewMatHang.BorderStyle = BorderStyle.None;
-            dataGridViewMatHang.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
-            dataGridViewMatHang.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewMatHang.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
-            dataGridViewMatHang.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            dataGridViewMatHang.BackgroundColor = Color.FromArgb(148, 184, 184);
-            dataGridViewMatHang.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewMatHang.EnableHeadersVisualStyles = false;
-            dataGridViewMatHang.AllowUserToAddRows = false;
-            dataGridViewMatHang.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewMatHang.ColumnHeadersDefaultCellStyle.Font = new Font("Times New Roman", 12);
             
-            //dòng tiêu đề của bảng
-            dataGridViewMatHang.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(58, 95, 95);
-            dataGridViewMatHang.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            //căn giữa 
-           
 
         }
         private void customButton1_Click(object sender, EventArgs e)
@@ -114,13 +95,13 @@ namespace quản_lý_bán_hàng
             textBoxMaHang.Text = dataGridViewMatHang.CurrentRow.Cells[0].Value.ToString();
             comboBoxLoaiHang.Text = dataGridViewMatHang.CurrentRow.Cells[1].Value.ToString();
             textBoxTenMH.Text = dataGridViewMatHang.CurrentRow.Cells[2].Value.ToString();
-            byte[] pic;
-            pic = (byte[])dataGridViewMatHang.CurrentRow.Cells[3].Value;
+           // byte[] pic;
+          //  pic = (byte[])dataGridViewMatHang.CurrentRow.Cells[3].Value;
            // MemoryStream picture = new MemoryStream(pic);
            // pictureBoxHinh.Image = Image.FromStream(picture);
 
-            textBoxGia.Text = dataGridViewMatHang.CurrentRow.Cells[4].Value.ToString();
-            textBoxSL.Text = dataGridViewMatHang.CurrentRow.Cells[5].Value.ToString();
+            textBoxGia.Text = dataGridViewMatHang.CurrentRow.Cells[3].Value.ToString();
+            textBoxSL.Text = dataGridViewMatHang.CurrentRow.Cells[4].Value.ToString();
             double value = Convert.ToDouble(textBoxGia.Text);
             textBoxGia.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", value);
         }
@@ -194,7 +175,7 @@ namespace quản_lý_bán_hàng
                 int mahang = Convert.ToInt32(textBoxMaHang.Text);
                 string loaihang = comboBoxLoaiHang.Text;
                 string tenhang = textBoxTenMH.Text;
-                MemoryStream pic = new MemoryStream();
+               // MemoryStream pic = new MemoryStream();
              //   pictureBoxHinh.Image.Save(pic, pictureBoxHinh.Image.RawFormat);
                 double gia = Convert.ToDouble(textBoxGia.Text);
                 int soluong = Convert.ToInt32(textBoxSL.Text);

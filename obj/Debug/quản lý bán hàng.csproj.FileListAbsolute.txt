@@ -74,3 +74,41 @@ F:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản l
 F:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản lý bán hàng.csproj.CopyComplete
 F:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản lý bán hàng.exe
 F:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản lý bán hàng.pdb
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\bin\Debug\quản lý bán hàng.exe.config
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\bin\Debug\quản lý bán hàng.exe
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\bin\Debug\quản lý bán hàng.pdb
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\bin\Debug\DocumentFormat.OpenXml.dll
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\bin\Debug\DocumentFormat.OpenXml.xml
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản lý bán hàng.csproj.AssemblyReference.cache
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản lý bán hàng.csproj.ResolveComReference.cache
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.CTHDForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.DKiKHForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.LichSuMuaHangForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.KiGuiForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.CheckmaAdminForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.DoiMKForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.Form1.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.HoaDonForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.MatHangForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.MenuForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.Properties.Resources.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.QuanLyKHForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.ResetForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.ChamCongForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.KhoHangForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.QLNVForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.QuanLyForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.QuanLyMaGiamGiaForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.ThemNVForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.ThongKeDoanhThuForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.ThongKeMatHangForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.XoaNVForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.ChonGioHang.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.GioHangForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.KHForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản_lý_bán_hàng.ThanhToanForm.resources
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản lý bán hàng.csproj.GenerateResource.cache
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản lý bán hàng.csproj.CoreCompileInputs.cache
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản lý bán hàng.csproj.CopyComplete
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản lý bán hàng.exe
+E:\sql\New folder\quản lý bán hàng\quản lý bán hàng\obj\Debug\quản lý bán hàng.pdb

@@ -101,7 +101,7 @@ namespace quản_lý_bán_hàng
             textBoxTenNV.Text = tenNV;
             textBoxTongTien.Text = dataGridViewHoaDon.CurrentRow.Cells[3].Value.ToString();
             double value = Convert.ToDouble(textBoxTongTien.Text);
-            textBoxTongTien.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,##0.00}", value);
+          
 
         }
 

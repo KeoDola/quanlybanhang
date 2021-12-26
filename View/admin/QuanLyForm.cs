@@ -23,6 +23,7 @@ namespace quản_lý_bán_hàng
         {
             StyleDatagridview();
         }
+        #region style
         void StyleDatagridview()
         {
             DateTime ngay = DateTime.Now;
@@ -51,7 +52,7 @@ namespace quản_lý_bán_hàng
             
 
         }
-
+        #endregion
         private void buttonXoaNV_Click(object sender, EventArgs e)
         {
             XoaNVForm xoanv = new XoaNVForm();

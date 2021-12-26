@@ -10,7 +10,7 @@ namespace quản_lý_bán_hàng
 {
     class MY_DB
     {
-        SqlConnection con = new SqlConnection(@"Data Source=ADMIN\THANHTHUY;Initial Catalog=QLCUAHANG;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-ESG7P7K\THANHTHUY;Initial Catalog=QLCUAHANG;Integrated Security=True");
 
         // get the connection
         public SqlConnection getConnection
